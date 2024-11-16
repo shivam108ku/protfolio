@@ -1,0 +1,209 @@
+/* Profile Section */
+
+
+
+
+:root {
+    --bg-color: #0C0C0C;
+    --text-color: white;
+    --secondary-text-color: #8C8C8C;
+    --primary-button-bg: #484848;
+    --hover-bg-color: #48484861;
+    --border-radius: 0.6vw;
+    --container-width: 80%;
+    --gap-large: 2vw;
+    --gap-small: 1vw;
+    --button-height: 1.9vw;
+    --button-width: 9vw;
+    --profile-sec-height: 21vw;
+    --profile-img-height: 20.8vw;
+    --font-size-small: small;
+    --font-size-large: 5vw;
+    --margin-top-large: 4vw;
+    --line-height: 2vw;
+  }
+
+
+
+
+.profile-sec {
+    position: relative;
+    margin: auto;
+    margin-top: var(--gap-large);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--profile-sec-height);
+    width: var(--container-width);
+    animation: fadeIn 3.5s ease-in-out;
+  }
+  .pro-details a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  .pro-img {
+    border-radius: var(--border-radius);
+    margin: var(--gap-large);
+    height: var(--profile-img-height);
+    width: 90%;
+    background-color: var(--bg-color);
+  }
+  .pro-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    object-position: center;
+  }
+  .pro-details {
+    color: var(--secondary-text-color);
+    display: flex;
+    gap: var(--gap-large);
+    flex-direction: column;
+  }
+  .pro-details button {
+   
+    padding: 10px 20px;
+      font-size: 16px;
+      color: var(--text-color);
+      background-color: var(--primary-button-bg);
+      border: none;
+      border-radius: 1vw;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+   .pro-details button:hover{
+    background-color: var(--secondary-text-color);
+    transform: scale(1.01); /* Slightly enlarge button */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+   }
+  
+   .pro-details button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    
+    .video-con .video .vid{
+        width: 100%;
+        height: 45vw;
+        object-fit: contain;
+        object-position: center;
+    }
+  
+    .profile-sec {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        gap: var(--gap-small);
+    }
+    .pro-img {
+        height: auto;
+        width: 100%;
+        margin: var(--gap-small);
+    }
+    .pro-details {
+        align-items: center;
+        text-align: center;
+    }
+    .pro-details button {
+        width: 70%;
+    }
+  }
+  
+  /* profile section closed  */
+
+
+
+
+
+    /* CSS variables */
+:root {
+    --text-color: white;
+    --font-size: 5vw;
+    --margin-top: 4vw;
+    --width: 50%;
+  }
+  
+  /* Text container */
+  .text-con {
+    width: var(--width);
+    margin: auto;
+    margin-top: var(--margin-top);
+  }
+  
+  /* Text styling */
+  .text p {
+    color: var(--text-color);
+    font-size: var(--font-size);
+    font-weight: 500;
+  }
+  
+   
+  
+  @keyframes rotateOnScroll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+   
+  
+   
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    :root {
+      --font-size: 8vw;  
+      --width: 80%;  
+    }
+  
+    .text-con {
+      width: var(--width);
+      margin-top: 6vw;
+    }
+  
+    .text p {
+      font-size: var(--font-size);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    :root {
+      --font-size: 10vw;  
+      --width: 90%;  
+    }
+  
+    .text-con {
+      width: var(--width);
+      margin-top: 8vw;
+    }
+  
+    .text p {
+      font-size: var(--font-size);
+    }
+  }
+
+
+  .pro-details .text-con {
+    animation: appear linear;
+    transition:ease 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  

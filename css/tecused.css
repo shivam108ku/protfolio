@@ -1,0 +1,91 @@
+/* Tech section start */
+.container2 {
+    margin: auto;
+    background-color: #FFCC00;
+    height: 19vw;
+    padding: 1vw;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    max-width: 80%;
+  }
+  
+  .container2 h2 {
+    font-family: "Adieu";
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Marquee effect */
+  .logo-container {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+  
+  .logos {
+    display: inline-flex;
+    gap: 1vw;
+    align-items: center;
+    animation: marquee 10s linear infinite;
+  }
+  
+  .logos img {
+    width: 100px;
+    margin: 0 20px;
+  }
+  
+  /* Keyframes for marquee effect */
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container2 {
+      height: auto;
+      padding: 2vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
+  
+    .container2 h2 {
+      font-size: 2rem;
+    }
+  
+    .logos img {
+      width: 80px;
+      margin: 0 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container2 {
+      height: auto;
+      padding: 4vw;
+      margin-top: 4vw;
+      margin-bottom: 4vw;
+    }
+  
+    .container2 h2 {
+      font-size: 1.5rem;
+    }
+  
+    .logos {
+      gap: 0.5vw;
+    }
+  
+    .logos img {
+      width: 60px;
+      margin: 0 10px;
+    }
+  }
+  
+  
+  /* End  */

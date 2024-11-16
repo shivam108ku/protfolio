@@ -1,0 +1,140 @@
+/* Create a new page fun == page  */
+
+:root {
+    --bg-color: #0C0C0C;
+    --text-color: white;
+    --secondary-text-color: #8C8C8C;
+    --primary-button-bg: #484848;
+    --hover-bg-color: #48484861;
+    --border-radius: 0.6vw;
+    --container-width: 80%;
+    --gap-large: 2vw;
+    --gap-small: 1vw;
+    --button-height: 1.9vw;
+    --button-width: 9vw;
+    --profile-sec-height: 21vw;
+    --profile-img-height: 20.8vw;
+    --font-size-small: small;
+    --font-size-large: 5vw;
+    --margin-top-large: 4vw;
+    --line-height: 2vw;
+  }
+
+  
+
+
+.intro-sec{
+    background-color: var();
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    align-items: center;
+     transition: all 2s ease-in-out;
+     
+  }
+  
+  .intro-sec:hover{
+    background-color: white;
+    cursor: pointer;
+  
+  }
+   
+  .s-logo img{
+    height: 8vw;
+    width: 8vw;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+     
+  }
+   
+  .rfn{
+    display: flex;
+   
+     gap: 3vw;
+    align-items: center;
+    padding: 1vw;
+    font-size: 5vw;
+    font-family: "Adieu";
+    
+     
+    
+  }
+   
+  .rfn, div{
+    font-family: "Adieu";
+  }
+  
+  .move{
+    width: 100%;
+    text-align: center;
+    
+    
+    text-align: center;
+    position: relative;
+     
+    margin-bottom: 5vw;
+     
+     
+  }
+  .move h1{
+     font-size: 27vw;
+    position: relative;
+    font-family: "Adieu";
+    text-align: center;
+     
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+     
+   
+    .s-logo img {
+      height: 15vw;
+      width: 15vw;
+    }
+    
+    .rfn {
+      font-size: 8vw;
+      gap: 5vw;
+    }
+  
+    .move h1 {
+      font-size: 18vw;
+       
+       
+    }
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 480px) {
+    .s-logo img {
+      height: 20vw;
+      width: 20vw;
+    }
+    
+    .rfn {
+      font-size: 10vw;
+      gap: 4vw;
+      padding: 2vw;
+    }
+  
+    .move h1 {
+      font-size: 10vw;
+      margin-bottom: 18vw;
+       
+    }
+  }
+   
+  
+  
+  
+  
+  /* Create a new page fun == page  end */

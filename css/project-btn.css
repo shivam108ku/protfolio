@@ -1,0 +1,81 @@
+:root {
+    --bg-color: #0C0C0C;
+    --text-color: white;
+    --secondary-text-color: #8C8C8C;
+    --primary-button-bg: #484848;
+    --hover-bg-color: #48484861;
+    --border-radius: 0.6vw;
+    --container-width: 80%;
+    --gap-large: 2vw;
+    --gap-small: 1vw;
+    --button-height: 1.9vw;
+    --button-width: 9vw;
+    --profile-sec-height: 21vw;
+    --profile-img-height: 20.8vw;
+    --font-size-small: small;
+    --font-size-large: 5vw;
+    --margin-top-large: 4vw;
+    --line-height: 2vw;
+  }
+
+
+
+
+
+/* for projects  */
+.div-projects{
+    height: 100vh;
+    background-color: var(--text-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+  }
+  
+  
+  .neon-button {
+    background-color: var(--bg-color);  
+     
+    height: 10vw;
+    width: 20vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2vw;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00, 0 0 20px #00FF00;
+     
+     
+  }
+  
+  .neon-button a{
+    text-decoration: none;
+    color: #00FF00; ;
+  }
+  
+  /* Glowing effect on hover */
+  .neon-button:hover {
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00;
+    transform: scale(1.05);  
+  }
+  
+  /*   Text shadow   */
+  .neon-button:active {
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00, 0 0 20px #00FF00;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+  }
+  
+  
+  .div-projects:hover{
+    background-color: var(--bg-color);
+    cursor: pointer;
+  }
+  
+  
+  
+  /* end  */

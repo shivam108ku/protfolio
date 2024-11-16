@@ -1,0 +1,489 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Siliguri", sans-serif;
+    
+   
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+/* Header section  */
+
+
+.header1{   
+     
+    animation: fadeIn 2s ease-in-out;
+      position: fixed;  
+      top: 0;          
+      left: 0;
+      
+      width: 100%;     
+      background-color: #fff;   
+      padding: 1rem 2rem;
+      z-index: 100;     
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .navbar{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+ 
+    
+  }
+  .navbar a{
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+  }
+  .hamberger{
+    display: none;
+  }
+
+  .logo span{
+    padding: 0.5vw;
+    font-size: small;
+    border-radius: 50%;
+    border: 4px solid rgb(34, 33, 33);
+    color: black;
+    font-style: italic;
+    cursor: pointer;
+    animation: fadeIn 5s ease-in-out;
+     
+  }
+
+  .social-media{
+    display: flex;    
+    gap: 2vw;
+    align-items: center;
+    animation: fadeIn 5s ease-in-out;
+  }
+
+
+
+  /* General Styles */
+.header1 {
+    animation: fadeIn 2s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);  
+}
+
+.hamberger {
+    display: none;
+}
+
+.logo span {
+    padding: 0.5vw;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);  
+    border-radius: 50%;
+    border: 4px solid rgb(34, 33, 33);
+    color: black;
+    font-style: italic;
+    cursor: pointer;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.social-media {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    animation: fadeIn 5s ease-in-out;
+}
+
+/* Responsive  */
+
+ 
+@media (max-width: 768px) {
+    .header1 {
+        padding: 0.8rem 1.5rem;
+        justify-content: space-between;
+    }
+
+    .remove, .social-media{
+        display: none;  
+    }
+
+    .hamberger {
+        display: block;  
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .logo span {
+        font-size: clamp(0.7rem, 2vw, 1rem);  
+    }
+
+    
+}
+
+ 
+@media (max-width: 480px) {
+    .header1 {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .hamberger {
+        font-size: 2.5rem;  
+    }
+
+    .logo span {
+        font-size: clamp(0.6rem, 3vw, 0.9rem);
+        padding: 0.4vw;
+    }
+
+    
+}
+
+/* header end  */
+
+  /* hero section  */
+
+  .hero-section {
+  
+     
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+   
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;  
+ 
+}
+
+.overlay-text {
+    position: relative;
+    max-width: 80%;
+    z-index: 1;  
+}
+
+.overlay-text h1 {
+     user-select: none;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Adieu", monospace;
+}
+
+.tag {
+    display: inline-block;
+     
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 3px;
+    color: #fff;
+}
+
+ 
+
+/* text section  */
+.text-sec{
+    user-select: none;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Animation on the image */
+.rotating-image {
+    width: 100%;
+    height: auto;
+    animation: rotateOnScroll 5s infinite linear;
+}
+
+
+
+.text-h1 h1{
+    text-align: center;
+    font-size: 6vw;
+    font-family: "Adieu", monospace;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.3vw;
+       
+}
+
+.button button{
+    height: 3.2vw;
+    width: 15rem;
+    margin: 3vw;
+    font-size: 1vw;
+    font-family: "Adieu", monospace;
+    border-radius: 0.3vw;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    
+}
+
+@keyframes rotateOnScroll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ .social-media i{
+    animation: rotateOnScroll 2s infinite linear;
+ }
+ .social-media i:hover{
+    animation: none;
+ }
+
+
+
+/* article section  */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Articles Section */
+.articles-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.articles-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Articles Grid */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Article Card */
+.article-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Article Content */
+.article-content {
+    padding: 15px;
+}
+
+.article-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+
+/* video con  */
+.video-con{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #0073C1 , #000A33);
+    position: relative;
+    padding: 1vw;
+    
+}
+.video1{
+    
+    margin: auto;
+    overflow: hidden;   
+    height: 44.4vw;
+    width: 100%;
+}
+
+ 
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/* Animation on the image */
+.rotating-image {
+    width: 100%;
+    height: auto;
+    animation: rotateOnScroll 5s infinite linear;
+}
+
+@keyframes rotateOnScroll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* end from footer  */
+
+
+
+.footer-container {
+    overflow: hidden;
+    padding: 4vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    text-align: center;
+   
+     
+    position: relative;
+   
+}
+
+/* Marky effect on text */
+.marky-text-footer {
+    position: relative;
+    color: black;
+    font-size: 10vw;
+    font-family: "Adieu";
+    font-weight: 900;
+    line-height: 1;
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+}
+ 
+ .icons-footer{
+    display: flex;
+     gap: 1vw;
+     justify-content: center;
+     align-items: center;
+    
+ } 
+.icon{
+     
+    padding: 2vw 4vw 2vw 4vw;
+    background-color: #fefefe;
+    border-radius: 0.5vw;
+    border: 2px solid black;
+}
+.icon:hover{
+    background-color: #33333386;
+}
+ 
+/* Footer content */
+.footer {
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 0.1vw;
+    color: rgb(85, 53, 53);
+}
+
+ 
+@keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  /* end from footer  */
+
+ 
+ 
