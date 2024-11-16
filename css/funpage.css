@@ -42,10 +42,11 @@
   
   }
    
-  .s-logo img{
+  .s-logo video{
     height: 8vw;
     width: 8vw;
    
+
     display: flex;
     align-items: center;
     justify-content: center;
